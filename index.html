@@ -1,25 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="/index.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primer pagina web</title>
-    <style>
-        #titulo
-        {
-                 background-color: blueviolet;
-        };
-        .conBorde
-        {
-            border-color: blue;
-        }
-        h1
-        {
-            background-color: blueviolet;
-        }
+   
+   <style>
+    html, body
+    {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    header
+    {
+        display: flex;
+        height: 20%;
+        color: white;
+        background-color: black;
+    }
+    #container
+    {
+        display: flex;
+        height: 60%;
+        color: black;
+        background-color: antiquewhite;
+    }
+    .pie_pagina
+    {
+        display: flex;
+        background-color: orange;
+        height: 20%;
+        color: white;
+    }
+    .lateral
+    {
+        display: flex;
+        background-color: aqua;
+    }
     </style>
+
 </head>
+
 <body>
 
 <header>
@@ -33,23 +57,24 @@
     </nav>
 </header>
 
-<div class="container">
-    <aside>
+<section  style="background-color: blue;">
+    <h1>Mi pagina web</h1>
+    <p>Un texto es una composición de signos codificados en un sistema de escritura que forma una unidad de sentido. También es una composición de caracteres imprimibles (con grafema)</p>
+    <!-- <img id="Imagen1" src="image/descargar.jfif" alt="" srcset=""> -->
+    <!-- <img id="imagen2" src="image/descargar.jfif" alt="" srcset=""> -->
+</section>
+
+<div id="container" class="container">
+    <aside id="lateral">
         <ol>
             <li>item 1</li>
             <li>item 2</li>
             <li>item 3</li>
         </ol>
     </aside>
-    <section>
-        <h1 id= "h1" class="conBorde">Mi pagina web</h1>
-        <img id="imagen1" class="conBorde" src="image/descargar.jfif" alt="" srcset="">
-        <img id="imagen2" src="image/descargar.jfif" alt="" srcset="">
-
-    </section>
 </div>
 
-<footer>
+<footer class="pie_pagina">
     <p>Copyright de mi pagina</p>
 </footer>
 
