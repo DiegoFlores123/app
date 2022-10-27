@@ -13,6 +13,7 @@
         display: flex;
         flex-direction: column;
         height: 100%;
+        margin: 0%;
     }
     header
     {
@@ -20,26 +21,48 @@
         height: 20%;
         color: white;
         background-color: black;
+        padding-right: 40px;
+        justify-content: flex-end;
+        align-items: center;
     }
-    #container
+    #contenedor
     {
-        display: flex;
         height: 60%;
         color: black;
-        background-color: antiquewhite;
-    }
-    .pie_pagina
-    {
+        background-color: red;
         display: flex;
-        background-color: orange;
-        height: 20%;
-        color: white;
+    }
+    #principal
+    {
+        width: 70%;
+        margin: 20px;
     }
     .lateral
     {
         display: flex;
-        background-color: aqua;
+        background-color: orange;
+        width: 30%;
+        align-items: center;
+        justify-content: right;
+        padding-right: 50px;
     }
+    .pie_pagina
+    {
+        display: flex;
+        background-color: whitesmoke;
+        height: 20%;
+        color: black;
+    }
+    ul li
+    {
+        margin-left: 60px ;
+        display: inline;
+    }
+    ul li:hover
+    {
+        background-color: blueviolet;
+    }
+
     </style>
 
 </head>
@@ -57,15 +80,14 @@
     </nav>
 </header>
 
-<section  style="background-color: orange;">
-    <h1>Mi pagina web</h1>
-    <p>Un texto es una composición de signos codificados en un sistema de escritura que forma una unidad de sentido. También es una composición de caracteres imprimibles (con grafema)</p>
-    <!-- <img id="Imagen1" src="image/descargar.jfif" alt="" srcset=""> -->
-    <!-- <img id="imagen2" src="image/descargar.jfif" alt="" srcset=""> -->
-</section>
-
-<div id="container" class="container">
-    <aside id="lateral">
+<div id="contenedor">
+    <section id="principal">
+        <h1>Mi pagina web</h1>
+        <p>
+            Un texto es una composición de signos codificados en un sistema de escritura que forma una unidad de sentido. También es una composición de caracteres imprimibles (con grafema)
+        </p>
+    </section>
+    <aside class="lateral">
         <ol>
             <li>item 1</li>
             <li>item 2</li>
