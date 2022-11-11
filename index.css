@@ -1,0 +1,54 @@
+html, body
+    {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 0%;
+    }
+    header
+    {
+        display: flex;
+        height: 20%;
+        color: white;
+        background-color: black;
+        padding-right: 40px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #contenedor
+    {
+        height: 60%;
+        color: black;
+        background-color: red;
+        display: flex;
+    }
+    #principal
+    {
+        width: 70%;
+        margin: 20px;
+    }
+    .lateral
+    {
+        display: flex;
+        background-color: orange;
+        width: 30%;
+        align-items: center;
+        justify-content: right;
+        padding-right: 50px;
+    }
+    .pie_pagina
+    {
+        display: flex;
+        background-color: whitesmoke;
+        height: 20%;
+        color: black;
+    }
+    ul li
+    {
+        margin-left: 60px ;
+        display: inline;
+    }
+    ul li:hover
+    {
+        background-color: blueviolet;
+    }
